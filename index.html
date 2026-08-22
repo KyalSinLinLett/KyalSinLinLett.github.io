@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Sin | SWE @ Cadmus</title>
+  <title>Alex Sin | Software Engineer</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Alex Sin — Software Engineer at Cadmus. 5 years of full-stack engineering across Elixir, Node.js, and React, from real-time bus stop displays in Singapore to university assessment infrastructure across Australia, UK, US, and ME.">
+    content="Alex Sin — Software Engineer at Cadmus. 5 years of full-stack engineering across Elixir, Node.js, and React, from real-time bus stop displays in Singapore to university assessment infrastructure across Australia, UK, US, and ME. Working through the mathematics and physics underneath computation, toward quantum computing.">
   <meta name="keywords"
-    content="Alex Sin, Software Engineer, Elixir, Phoenix, Node.js, TypeScript, React, GraphQL, PostgreSQL, MySQL, Docker, Kubernetes, AWS, Cadmus, full-stack">
+    content="Alex Sin, Software Engineer, Elixir, Phoenix, Node.js, TypeScript, React, GraphQL, PostgreSQL, MySQL, Docker, Kubernetes, AWS, Cadmus, full-stack, distributed systems, scientific computing, quantum computing">
   <meta name="author" content="Alex Sin">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://alexsindev.github.io/">
@@ -18,17 +18,17 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://alexsindev.github.io/">
-  <meta property="og:title" content="Alex Sin | SWE @ Cadmus">
+  <meta property="og:title" content="Alex Sin | Software Engineer">
   <meta property="og:description"
-    content="Software Engineer at Cadmus. 5 years of full-stack engineering across Elixir, Node.js, and React.">
+    content="Software Engineer at Cadmus, building real-time and large-scale systems — and the mathematics and physics underneath them, toward quantum computation.">
   <meta property="og:image" content="https://alexsindev.github.io/profile_pic.jpeg">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://alexsindev.github.io/">
-  <meta name="twitter:title" content="Alex Sin | SWE @ Cadmus">
+  <meta name="twitter:title" content="Alex Sin | Software Engineer">
   <meta name="twitter:description"
-    content="Software Engineer at Cadmus. 5 years of full-stack engineering across Elixir, Node.js, and React.">
+    content="Software Engineer at Cadmus, building real-time and large-scale systems — and the mathematics and physics underneath them, toward quantum computation.">
   <meta name="twitter:image" content="https://alexsindev.github.io/profile_pic.jpeg">
 
   <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)">
@@ -40,7 +40,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Alex Sin",
-    "description": "Software Engineer at Cadmus. 5 years of full-stack engineering across Elixir, Node.js, and React.",
+    "description": "Software Engineer at Cadmus, building real-time and large-scale systems — and the mathematics and physics underneath them, toward quantum computation.",
     "url": "https://alexsindev.github.io",
     "image": "https://alexsindev.github.io/profile_pic.jpeg",
     "jobTitle": "Software Engineer",
@@ -54,7 +54,8 @@
     ],
     "knowsAbout": [
       "Elixir", "Phoenix", "Node.js", "TypeScript", "React", "GraphQL",
-      "PostgreSQL", "MySQL", "Docker", "Kubernetes", "AWS"
+      "PostgreSQL", "MySQL", "Docker", "Kubernetes", "AWS",
+      "Distributed Systems", "Real-Time Systems"
     ]
   }
   </script>
@@ -66,7 +67,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
     rel="stylesheet">
 
   <style>
@@ -79,29 +80,29 @@
     :root {
       --primary-bg: #fafaf9;
       --secondary-bg: #f0efed;
-      --accent-bg: #e8e7e5;
       --text-primary: #1a1a1a;
       --text-secondary: #555b64;
       --accent-color: #4a7a58;
-      --accent-hover: #3a6a48;
       --border-color: #d1d5db;
-      --heading-font: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-      --gradient: linear-gradient(135deg, #f5f5f0 0%, #fafaf9 100%);
-      --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+      --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+      /* Vertical rhythm */
+      --space-section: 68px;
+      --space-header: 26px;
+      --space-entry: 32px;
+      --measure: 840px;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
         --primary-bg: #0f1419;
         --secondary-bg: #161d24;
-        --accent-bg: #1c252e;
         --text-primary: #e8e6e3;
         --text-secondary: #9ca3af;
         --accent-color: #6b9a78;
-        --accent-hover: #8ab89a;
         --border-color: #2d3741;
-        --gradient: linear-gradient(135deg, #1a2633 0%, #0f1419 100%);
-        --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       }
     }
 
@@ -109,42 +110,45 @@
     :root[data-theme="light"] {
       --primary-bg: #fafaf9;
       --secondary-bg: #f0efed;
-      --accent-bg: #e8e7e5;
       --text-primary: #1a1a1a;
       --text-secondary: #555b64;
       --accent-color: #4a7a58;
-      --accent-hover: #3a6a48;
       --border-color: #d1d5db;
-      --gradient: linear-gradient(135deg, #f5f5f0 0%, #fafaf9 100%);
-      --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
 
     :root[data-theme="dark"] {
       --primary-bg: #0f1419;
       --secondary-bg: #161d24;
-      --accent-bg: #1c252e;
       --text-primary: #e8e6e3;
       --text-secondary: #9ca3af;
       --accent-color: #6b9a78;
-      --accent-hover: #8ab89a;
       --border-color: #2d3741;
-      --gradient: linear-gradient(135deg, #1a2633 0%, #0f1419 100%);
-      --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--primary-bg);
+      color: var(--text-primary);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .theme-toggle {
       position: fixed;
-      top: 16px;
-      right: 16px;
+      top: 18px;
+      right: 18px;
       z-index: 100;
-      width: 34px;
-      height: 34px;
+      width: 30px;
+      height: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 0;
       border: 1px solid var(--border-color);
-      border-radius: 50%;
+      border-radius: 2px;
       background: var(--secondary-bg);
       color: var(--text-secondary);
       cursor: pointer;
@@ -157,30 +161,8 @@
     }
 
     .theme-toggle svg {
-      width: 16px;
-      height: 16px;
-    }
-
-    body {
-      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: var(--primary-bg);
-      color: var(--text-primary);
-      line-height: 1.6;
-      overflow-x: hidden;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background:
-        radial-gradient(circle at 20% 30%, rgba(107, 154, 120, 0.05) 0%, transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(107, 154, 120, 0.03) 0%, transparent 40%);
-      z-index: -1;
+      width: 14px;
+      height: 14px;
     }
 
     .skip-link {
@@ -191,7 +173,8 @@
       color: var(--primary-bg);
       padding: 8px 16px;
       z-index: 100;
-      font-size: 0.9rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
       transition: top 0.2s ease;
     }
 
@@ -200,137 +183,100 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: var(--measure);
       margin: 0 auto;
-      padding: 60px 20px;
+      padding: 64px 24px 0;
       position: relative;
     }
 
     /* ─── Hero ─── */
     .hero {
-      text-align: center;
-      padding: 20px 0 40px;
-      position: relative;
-      animation: fadeIn 0.6s ease-out;
+      padding: 0 0 8px;
+      animation: fadeIn 0.5s ease-out;
     }
 
     .profile-image {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      margin: 0 auto 18px;
+      width: 92px;
+      height: 92px;
+      border-radius: 2px;
+      object-fit: cover;
       display: block;
+      margin: 0 0 22px;
     }
 
     h1 {
-      font-family: var(--heading-font);
-      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      font-family: var(--font-mono);
+      font-size: clamp(1.6rem, 4.5vw, 2.05rem);
       font-weight: 500;
       color: var(--text-primary);
-      letter-spacing: 0.08em;
-      margin-bottom: 6px;
-    }
-
-    .hero-role {
-      font-family: var(--heading-font);
-      font-size: 1.15rem;
-      color: var(--accent-color);
-      letter-spacing: 0.06em;
-      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: 1.25;
       margin-bottom: 10px;
     }
 
-    .hero-role a {
-      color: inherit;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-thickness: 1px;
-      transition: color 0.2s ease;
-    }
-
-    .hero-role a:hover {
-      color: var(--accent-hover);
-    }
-
-    .hero-stack {
-      font-family: var(--heading-font);
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-      margin-bottom: 16px;
-      letter-spacing: 0.02em;
+    .hero-role {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      color: var(--accent-color);
+      margin-bottom: 26px;
     }
 
     .intro {
-      font-family: var(--heading-font);
-      font-size: 1rem;
-      color: var(--text-secondary);
+      font-size: 0.98rem;
       font-weight: 400;
-      line-height: 1.7;
-      max-width: 580px;
-      margin: 0 auto 22px;
-    }
-
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .contact-link {
       color: var(--text-secondary);
-      text-decoration: underline;
-      transition: color 0.2s ease;
-      font-size: 0.9rem;
-    }
-
-    .contact-link:hover {
-      color: var(--text-primary);
+      line-height: 1.8;
+      max-width: 68ch;
     }
 
     /* ─── Section Headers ─── */
     .section-header {
-      font-family: var(--heading-font);
-      font-size: 1.8rem;
-      font-weight: 600;
-      text-align: left;
-      margin: 40px 0;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.17em;
+      color: var(--text-secondary);
+      margin: var(--space-section) 0 var(--space-header);
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
       position: relative;
-      letter-spacing: 0.03em;
-      color: var(--text-primary);
     }
 
     .section-header::after {
       content: '';
       position: absolute;
-      bottom: -10px;
+      bottom: -1px;
       left: 0;
-      width: 50px;
-      height: 2px;
+      width: 44px;
+      height: 1px;
       background: var(--accent-color);
     }
 
-    /* ─── Experience Cards ─── */
+    /* ─── Experience / Education entries ─── */
     .experience-grid {
       display: grid;
-      gap: 36px;
-      margin-bottom: 60px;
+      gap: var(--space-entry);
     }
 
     .experience-card {
       display: grid;
-      grid-template-columns: 106px 1fr;
-      gap: 0 36px;
+      grid-template-columns: 104px 1fr;
+      gap: 0 32px;
     }
 
     .job-period {
-      font-family: var(--heading-font);
-      font-size: 0.88rem;
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      line-height: 1.6;
       color: var(--text-secondary);
       text-align: right;
+      letter-spacing: 0.01em;
+      font-variant-numeric: tabular-nums;
       padding-top: 3px;
-      font-style: italic;
-      line-height: 1.5;
     }
 
     .job-content {
@@ -339,220 +285,134 @@
     }
 
     h3.job-title {
-      font-family: var(--heading-font);
-      font-size: 1.25rem;
+      font-size: 1.02rem;
       font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: -0.005em;
       color: var(--text-primary);
       margin-bottom: 3px;
-      letter-spacing: 0.01em;
+    }
+
+    /* Entries with no company link still need the gap it would have provided */
+    h3.job-title + .job-bullets,
+    h3.job-title + .job-description {
+      margin-top: 13px;
     }
 
     .company-link {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
       color: var(--text-secondary);
       text-decoration: none;
-      font-size: 0.88rem;
-      margin-bottom: 12px;
+      letter-spacing: 0.01em;
       display: block;
+      margin-bottom: 14px;
       transition: color 0.2s ease;
-      font-style: italic;
     }
 
     .company-link:hover {
-      color: var(--text-primary);
+      color: var(--accent-color);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
     .job-description {
-      font-family: var(--heading-font);
+      font-size: 0.93rem;
       color: var(--text-secondary);
-      margin-bottom: 12px;
       line-height: 1.75;
-      font-size: 1rem;
+      max-width: 68ch;
     }
 
-    .tech-inline {
-      font-family: var(--heading-font);
-      font-size: 0.85rem;
+    .coursework {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      line-height: 1.95;
+      letter-spacing: 0.01em;
       color: var(--text-secondary);
-      font-style: italic;
-      opacity: 0.55;
+      margin-top: 12px;
+      max-width: 68ch;
+    }
+
+    /* Keep multi-word course titles from breaking across lines */
+    .coursework span {
+      white-space: nowrap;
     }
 
     .job-bullets {
       list-style: none;
-      padding: 0;
-      margin: 0;
       display: grid;
-      gap: 8px;
+      gap: 9px;
     }
 
     .job-bullets li {
-      font-family: var(--heading-font);
+      font-size: 0.93rem;
       color: var(--text-secondary);
-      font-size: 1rem;
       line-height: 1.7;
-      padding-left: 18px;
+      padding-left: 20px;
       position: relative;
+      max-width: 68ch;
     }
 
     .job-bullets li::before {
       content: '–';
+      font-family: var(--font-mono);
       position: absolute;
       left: 0;
       color: var(--accent-color);
-    }
-
-    /* ─── Engineering Stack ─── */
-    .stack-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
-      gap: 28px;
-      margin-bottom: 60px;
-    }
-
-    .stack-label {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--accent-color);
-      margin-bottom: 10px;
-      font-weight: 500;
-    }
-
-    .stack-tags {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    .stack-tag {
-      font-family: var(--heading-font);
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.4;
-    }
-
-    /* ─── Engineering Notes ─── */
-    .notes-list {
-      border: 1px solid var(--border-color);
-      margin-bottom: 60px;
-    }
-
-    a.note-item {
-      display: block;
-      padding: 18px 20px;
-      text-decoration: none;
-      border-bottom: 1px solid var(--border-color);
-      transition: background 0.15s ease;
-    }
-
-    a.note-item:last-child {
-      border-bottom: none;
-    }
-
-    a.note-item:hover {
-      background: var(--secondary-bg);
-    }
-
-    .note-title {
-      font-family: var(--heading-font);
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-bottom: 5px;
-      letter-spacing: 0.01em;
-    }
-
-    .note-summary {
-      font-family: var(--heading-font);
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
-      margin-bottom: 8px;
-    }
-
-    .note-status {
-      font-size: 0.72rem;
-      color: var(--accent-color);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    /* ─── Now ─── */
-    .now-list {
-      list-style: none;
-      margin-bottom: 60px;
-      display: grid;
-      gap: 14px;
-    }
-
-    .now-list li {
-      font-family: var(--heading-font);
-      color: var(--text-secondary);
-      font-size: 1rem;
-      line-height: 1.7;
-      padding-left: 20px;
-      position: relative;
-    }
-
-    .now-list li::before {
-      content: '→';
-      position: absolute;
-      left: 0;
-      color: var(--accent-color);
-    }
-
-    .now-updated {
-      font-size: 0.8rem;
-      color: var(--border-color);
-      margin-top: 4px;
     }
 
     /* ─── Contact ─── */
     .contact-content {
-      margin-bottom: 60px;
-    }
-
-    .contact-content p {
-      font-family: var(--heading-font);
-      color: var(--text-secondary);
-      line-height: 1.8;
-      font-size: 1rem;
-      margin-bottom: 20px;
-      max-width: 600px;
+      margin-bottom: var(--space-section);
     }
 
     .contact-links {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
     }
 
     .contact-links a {
-      font-family: var(--heading-font);
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
       color: var(--text-secondary);
-      text-decoration: underline;
-      font-size: 1rem;
+      text-decoration: none;
       width: fit-content;
-      transition: color 0.2s ease;
+      padding-bottom: 2px;
+      border-bottom: 1px solid var(--border-color);
+      transition: color 0.2s ease, border-color 0.2s ease;
     }
 
     .contact-links a:hover {
       color: var(--text-primary);
+      border-color: var(--accent-color);
     }
 
     /* ─── Footer ─── */
     footer {
-      text-align: center;
-      padding: 24px 20px;
-      border-top: 1px solid var(--border-color);
+      max-width: var(--measure);
+      margin: 0 auto;
+      padding: 20px 24px 48px;
+      position: relative;
+    }
+
+    /* Inset to the content box so it lines up with the section-header rules */
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 24px;
+      right: 24px;
+      height: 1px;
+      background: var(--border-color);
     }
 
     footer a {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
       color: var(--text-secondary);
       text-decoration: none;
-      font-size: 0.85rem;
-      font-family: var(--heading-font);
-      font-style: italic;
+      letter-spacing: 0.02em;
       transition: color 0.2s ease;
     }
 
@@ -568,23 +428,24 @@
 
     /* ─── Responsive ─── */
     @media (max-width: 768px) {
-      .hero {
-        padding: 10px 0 30px;
+      :root {
+        --space-section: 48px;
+        --space-header: 22px;
+        --space-entry: 26px;
       }
 
-      .contact-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+      .container {
+        padding: 40px 20px 0;
       }
 
       .experience-card {
         grid-template-columns: 1fr;
-        gap: 4px 0;
+        gap: 6px 0;
       }
 
       .job-period {
         text-align: left;
+        padding-top: 0;
       }
 
       .job-content {
@@ -594,36 +455,27 @@
         padding-top: 14px;
       }
 
-      .section-header {
-        font-size: 1.5rem;
-        margin: 20px 0;
+      footer {
+        padding: 18px 20px 40px;
       }
 
-      .container {
-        padding: 20px 15px;
-      }
-
-      .stack-grid {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        gap: 20px;
+      footer::before {
+        left: 20px;
+        right: 20px;
       }
     }
 
     @media (max-width: 480px) {
       .profile-image {
-        width: 90px;
-        height: 90px;
-      }
-
-      h1 {
-        font-size: 2rem;
+        width: 78px;
+        height: 78px;
       }
     }
 
     @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: translateY(15px);
+        transform: translateY(12px);
       }
 
       to {
@@ -634,7 +486,7 @@
 
     html {
       scrollbar-width: thin;
-      scrollbar-color: var(--accent-color) var(--primary-bg);
+      scrollbar-color: var(--border-color) var(--primary-bg);
     }
 
     ::-webkit-scrollbar {
@@ -646,12 +498,11 @@
     }
 
     ::-webkit-scrollbar-thumb {
-      background: var(--accent-color);
-      border-radius: 4px;
+      background: var(--border-color);
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: var(--accent-hover);
+      background: var(--accent-color);
     }
   </style>
   <script>
@@ -675,11 +526,12 @@
     <section class="hero" aria-label="Introduction">
       <img src="profile_pic.jpeg" alt="Alex Sin" class="profile-image" loading="eager" decoding="async">
       <h1>Alex Sin, M.Sc</h1>
-      <p class="hero-role">Software Engineer @ <a href="https://www.cadmus.io" target="_blank" rel="noopener noreferrer">Cadmus</a>, Australia</p>
+      <p class="hero-role">Software Engineer</p>
       <p class="intro">
-        I build real-time and large-scale systems, from displays at 200+ Singapore bus stops
-        to assessment infrastructure used by universities across Australia, the UK, US, and ME.
-        <span style="white-space: nowrap;">Full-stack</span> engineering since 2021, across Elixir, Node.js, and React.
+        I started in pure mathematics and physics, then moved into computing. Now I build real-time
+        and large-scale systems, from displays at 200+ Singapore bus stops to assessment
+        infrastructure used by universities across Australia, the UK, US, and ME.
+        <span style="white-space: nowrap;">Full-stack</span> engineering since 2021.
       </p>
     </section>
 
@@ -756,6 +608,11 @@
           <p class="job-description">
             Pursuing a Masters in CS while engineering full-time at Cadmus.
           </p>
+          <p class="coursework">
+            <span>Theory of Computation</span> &middot; <span>Programming Language and Compilers</span> &middot;
+            <span>Algorithms Design and Analysis</span> &middot; <span>Data Modelling</span> &middot;
+            <span>Machine Learning</span>
+          </p>
         </div>
       </article>
 
@@ -770,6 +627,10 @@
             Completed an accelerated undergrad pathway via the Scottish Qualifications Authority (SCQF Level 8),
             graduating with First Class Honours from the University of Greenwich.
           </p>
+          <p class="coursework">
+            <span>Mathematics for Computing</span> &middot; <span>Routing and Switching Technologies</span> &middot;
+            <span>Computer Systems</span> &middot; <span>Database Design and Development</span>
+          </p>
         </div>
       </article>
 
@@ -778,120 +639,19 @@
         <div class="job-content">
           <h3 class="job-title">University of Yangon — BSc Mathematics</h3>
           <p class="job-description">
-            Pursued pure Mathematics and Physics before transitioning fully into Computing.
+            Pure Mathematics and Physics before moving fully into Computing.
+          </p>
+          <p class="coursework">
+            <span>Real Analysis</span> &middot; <span>Differential and Integral Calculus</span> &middot;
+            <span>Classical Mechanics</span> &middot; <span>Electromagnetism</span>
           </p>
         </div>
       </article>
-
-      <article class="experience-card">
-        <time class="job-period" datetime="2018-01">Jan 2018 –<br>Apr 2019</time>
-        <div class="job-content">
-          <h3 class="job-title">Acmar International School — Malaysian Certificate of Education</h3>
-          <p class="job-description">
-            Graduated secondary schooling with Straight A's (6A+, 2A, 1A–), scoring A+ across all STEM subjects
-            including Physics and Additional Mathematics — equivalent to GCSEs (England) / O-Levels.
-          </p>
-        </div>
-      </article>
-
-    </div>
-
-    <!-- ─── Engineering Stack ─── -->
-    <h2 class="section-header">Engineering Stack</h2>
-
-    <div class="stack-grid">
-      <div class="stack-layer">
-        <p class="stack-label">Languages</p>
-        <div class="stack-tags">
-          <span class="stack-tag">Elixir</span>
-          <span class="stack-tag">Node.js</span>
-          <span class="stack-tag">TypeScript</span>
-        </div>
-      </div>
-      <div class="stack-layer">
-        <p class="stack-label">Frameworks</p>
-        <div class="stack-tags">
-          <span class="stack-tag">Phoenix</span>
-          <span class="stack-tag">React</span>
-        </div>
-      </div>
-      <div class="stack-layer">
-        <p class="stack-label">Data</p>
-        <div class="stack-tags">
-          <span class="stack-tag">PostgreSQL</span>
-          <span class="stack-tag">MySQL</span>
-          <span class="stack-tag">GraphQL</span>
-        </div>
-      </div>
-      <div class="stack-layer">
-        <p class="stack-label">Infrastructure</p>
-        <div class="stack-tags">
-          <span class="stack-tag">AWS</span>
-          <span class="stack-tag">Kubernetes</span>
-          <span class="stack-tag">Docker</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ─── Engineering Notes ─── -->
-    <h2 class="section-header">Engineering Notes</h2>
-
-    <div class="notes-list" role="list">
-
-      <a href="notes/websocket-reconnection.html" class="note-item" role="listitem">
-        <p class="note-title">Designing for Reconnection: WebSocket State at Scale</p>
-        <p class="note-summary">
-          The real design problem in WebSocket systems is not connection — it is reconnection.
-          How to restore session state, replay missed messages, and avoid thundering herd
-          when thousands of clients reconnect simultaneously.
-        </p>
-        <span class="note-status">In progress</span>
-      </a>
-
-      <a href="notes/otp-supervision.html" class="note-item" role="listitem">
-        <p class="note-title">The OTP Supervision Tree as an Architecture Pattern</p>
-        <p class="note-summary">
-          The supervision tree is the architecture diagram. Scoping supervisors to logical
-          failure domains keeps partial failures partial — and makes the failure model
-          explicit rather than emergent.
-        </p>
-        <span class="note-status">In progress</span>
-      </a>
-
-      <a href="notes/kafka-vs-rabbitmq.html" class="note-item" role="listitem">
-        <p class="note-title">Kafka vs RabbitMQ: A Systems Engineering Decision</p>
-        <p class="note-summary">
-          Not a feature comparison — a decision framework. RabbitMQ models the routing
-          problem; Kafka models the log problem. How to reason about the choice
-          before you build.
-        </p>
-        <span class="note-status">In progress</span>
-      </a>
-
-      <a href="notes/iot-telemetry-scaling.html" class="note-item" role="listitem">
-        <p class="note-title">Scaling IoT Telemetry Ingestion: Protocol Heterogeneity</p>
-        <p class="note-summary">
-          MQTT, LoRaWAN, and BLE have different QoS models, payload formats, and failure
-          characteristics. Why a generic ingestion layer is the wrong abstraction, and
-          how protocol-specific services compose cleanly at the normalisation layer.
-        </p>
-        <span class="note-status">In progress</span>
-      </a>
-
-      <a href="notes/backpressure.html" class="note-item" role="listitem">
-        <p class="note-title">Backpressure in Event-Driven Systems</p>
-        <p class="note-summary">
-          Bursty device telemetry will overwhelm a naive ingestion pipeline. A practical
-          look at backpressure strategies: RabbitMQ consumer prefetch, Kafka consumer
-          group lag, and GenStage demand-driven pipelines in Elixir.
-        </p>
-        <span class="note-status">In progress</span>
-      </a>
 
     </div>
 
     <!-- ─── Contact ─── -->
-    <h2 class="section-header" style="margin-top: 50px;">Contact</h2>
+    <h2 class="section-header">Contact</h2>
 
     <div class="contact-content">
       <div class="contact-links">
@@ -919,7 +679,7 @@
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-    document.querySelectorAll('.experience-card, .note-item').forEach(el => {
+    document.querySelectorAll('.experience-card').forEach(el => {
       el.style.opacity = '0';
       el.style.transform = 'translateY(20px)';
       el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
